@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/yeni_verilenler_bazasi
+    url: jdbc:mysql://localhost:3306/rusu
     username: root
     password: 12345
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -14,5 +14,3 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL8Dialect
-
-

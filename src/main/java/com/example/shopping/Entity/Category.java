@@ -1,18 +1,26 @@
 package com.example.shopping.Entity;
 
 import jakarta.persistence.*;
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.experimental.FieldDefaults;
 import org.hibernate.cache.spi.support.AbstractReadWriteAccess;
 
 import java.util.List;
 
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
+@Table(name ="Category")
+@FieldDefaults(level= AccessLevel.PRIVATE)
 public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    Long id;
 
-    private String name;
+    String name;
 
     @OneToMany(mappedBy = "category")
-    private List<Item> items;
+     List<Item> items;
 }
