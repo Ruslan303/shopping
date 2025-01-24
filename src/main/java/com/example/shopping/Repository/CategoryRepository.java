@@ -1,6 +1,8 @@
 package com.example.shopping.Repository;
 
-import jdk.jfr.Category;
+
+
+import com.example.shopping.Entity.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

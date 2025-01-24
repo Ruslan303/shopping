@@ -3,15 +3,17 @@ package com.example.shopping.Controller;
 import com.example.shopping.Entity.Customer;
 import com.example.shopping.Service.CustomerService;
 import jdk.jfr.Category;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/api/customers")
+@RequiredArgsConstructor
 public class CustomerController {
 
-    private CustomerService customerService;
+    private final CustomerService customerService;
 
 
     @GetMapping

@@ -16,8 +16,8 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class CustomerService {
 
-    private CustomerRepository customerRepository;
-    private ItemRepository itemRepository;
+    private final CustomerRepository customerRepository;
+    private final ItemRepository itemRepository;
 
 
     public Customer registerCustomer(Customer customer) {
